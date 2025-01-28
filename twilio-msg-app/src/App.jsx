@@ -10,7 +10,7 @@ function App() {
 
   const handleSendMessage = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/send-sms", {
+      const response = await axios.post("https://twilio-message-app-api.vercel.app", {
         body: messageContent,
         to: userNumber,
       });
